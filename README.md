@@ -1,57 +1,39 @@
-# Business Plan: MM Resume Live Site Service
+# MM Resume Service: Personal Planning & Checklist
 
-## Executive Summary
-The **MM Resume Live Site Service** is a specialized digital agency providing professional, high-performance, and personalized resume/portfolio websites for professionals and job seekers. By leveraging the stability of GitHub Pages and the branding power of custom subdomains (e.g., `clientname.mmresume.com`), we offer a premium alternative to traditional PDF resumes and generic LinkedIn profiles.
+This is a private planning document for the MM Resume live site service.
 
-## Core Objectives
-1.  **Professional Branding**: Provide clients with a unique web presence that stands out to recruiters.
-2.  **Technical Simplicity**: Handle all technical aspects, from hosting to domain configuration, for the client.
-3.  **Bilingual Support**: Cater specifically to the Myanmar market with full support for Burmese and English content.
+## Project Overview
+Selling professional resume/portfolio live sites to clients in Myanmar and beyond, utilizing GitHub Pages for hosting and custom subdomains for branding.
 
-## Technical Architecture
-The service utilizes a robust and cost-effective infrastructure:
-*   **Primary Domain**: `mmresume.com` (Root domain for marketing and sales).
-*   **Hosting Provider**: GitHub Pages (Used for client portfolio sites due to its high uptime and performance).
-*   **Domain Management**: A centralized DNS provider to manage subdomains pointing to client GitHub repositories.
-*   **Deployment Workflow**:
-    1.  Create a public GitHub repository for the client (e.g., `github.com/mmresume/client-name`).
-    2.  Enable GitHub Pages for the repository.
-    3.  Configure a CNAME record in the repository and a corresponding CNAME record in the `mmresume.com` DNS settings.
+## Implementation Checklist
 
-## Service Packages & Pricing
+### Phase 1: Setup & Basic Infrastructure (GitHub.io)
+- [x] Create GitHub repository (`tinghah/livesite-shop`)
+- [x] Build bilingual (English/Burmese) landing page
+- [x] Create professional design with HTML/CSS/JS
+- [x] Ensure UTF-8 encoding for Burmese text support
+- [x] Initial push of core website files to GitHub
+- [ ] Configure GitHub Pages to deploy via GitHub Actions
+- [ ] Verify live site at `tinghah.github.io/livesite-shop`
 
-| Package | Features | Price (One-time) | Annual Maintenance |
-| :--- | :--- | :--- | :--- |
-| **Basic** | Single-page HTML resume, `client.mmresume.com` subdomain, Standard template. | $25 | $10 |
-| **Professional** | Multi-page site, Custom graphics, SEO optimization, Priority support. | $50 | $15 |
-| **Premium** | Interactive elements, Blog integration, Custom domain support, Monthly updates. | $100 | $25 |
+### Phase 2: Branding & Domain Management
+- [ ] Purchase domain `mmresume.com`
+- [ ] Set up Cloudflare for DNS management and SSL
+- [ ] Configure root domain `mmresume.com` to point to the main landing page
+- [ ] Set up automated subdomain provisioning for clients (e.g., `client.mmresume.com`)
 
-## Workflow & Delivery Process
-1.  **Onboarding**: Client submits resume data and selects a template via the main website.
-2.  **Development**: Our team builds the portfolio site using the `livesite-shop` framework.
-3.  **Review**: A preview link is sent to the client for feedback and revisions.
-4.  **Deployment**: The site is pushed to GitHub, and the subdomain is activated.
-5.  **Handover**: Client receives access to the repository (if requested) and instructions for future updates.
+### Phase 3: Client Onboarding & Template Development
+- [ ] Create a standard "Client Resume Template" repository
+- [ ] Define data submission format for clients (Form/Email)
+- [ ] Establish pricing tiers ($25 Basic, $50 Professional)
+- [ ] Set up a streamlined workflow for converting client data to live sites
 
-## Technical Setup Instructions
-### For Developers
-1.  **Repository Setup**:
-    ```bash
-    git clone https://github.com/tinghah/livesite-shop.git
-    cd livesite-shop
-    ```
-2.  **Local Development**:
-    Ensure all files are saved with **UTF-8** encoding to support Burmese characters. Use a local server to preview changes.
-3.  **Subdomain Configuration**:
-    Add a CNAME file to the root of the client's repository:
-    ```text
-    clientname.mmresume.com
-    ```
-4.  **DNS Provider**:
-    In your DNS management panel, add:
-    *   Type: `CNAME`
-    *   Host: `clientname`
-    *   Value: `mmresume.github.io` (or the specific GitHub user/org pages URL).
+### Phase 4: Marketing & Sales
+- [ ] Launch main landing page on `mmresume.com`
+- [ ] Create sample portfolio sites for demonstration
+- [ ] Start social media marketing (Facebook/LinkedIn)
+- [ ] Implement order/contact system
 
-## Contact & Support
-For inquiries, please visit our main landing page or contact our support team at `support@mmresume.com`.
+## Deployment Strategy
+1.  **Current Stage**: Using the free `github.io` domain for initial setup and testing.
+2.  **Next Stage**: Transition to `mmresume.com` via Cloudflare. Cloudflare will handle the CNAME records for subdomains, pointing them to individual client repositories hosted on GitHub Pages. This ensures high performance, free SSL, and a professional branded experience for every client.
