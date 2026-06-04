@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Resume - Professional Portfolio Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MM Resume</div>
+            <div class="lang-switch">
+                <button onclick="setLanguage('en')" id="btn-en" class="active">English</button>
+                <button onclick="setLanguage('my')" id="btn-my">မြန်မာ</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-en="Elevate Your Career with a Live Resume" data-my="သင်၏ အသက်မွေးဝမ်းကြောင်းကို ဝဘ်ဆိုဒ် ကိုယ်ရေးရာဇဝင်ဖြင့် မြှင့်တင်ပါ">Elevate Your Career with a Live Resume</h1>
+            <p data-en="Professional, responsive, and personalized portfolio sites hosted on your own subdomain." data-my="သင်၏ ကိုယ်ပိုင် subdomain တွင် လှပသပ်ရပ်သော ပေါ်တိုဖိုလီယို ဝဘ်ဆိုဒ်များ ဖန်တီးပေးပါသည်။">Professional, responsive, and personalized portfolio sites hosted on your own subdomain.</p>
+            <a href="#pricing" class="cta-button" data-en="View Pricing" data-my="ဈေးနှုန်းများကြည့်ရန်">View Pricing</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-en="Why Choose Us?" data-my="ကျွန်ုပ်တို့ကို ဘာကြောင့် ရွေးချယ်သင့်သလဲ?">Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3 data-en="Custom Subdomain" data-my="ကိုယ်ပိုင် Subdomain">Custom Subdomain</h3>
+                    <p data-en="Get your name on the web like clientname.mmresume.com." data-my="clientname.mmresume.com ကဲ့သို့ သင်၏ အမည်ဖြင့် ဝဘ်လိပ်စာ ရရှိမည်။">Get your name on the web like clientname.mmresume.com.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-en="Fast & Reliable" data-my="မြန်ဆန်ပြီး စိတ်ချရခြင်း">Fast & Reliable</h3>
+                    <p data-en="Powered by GitHub Pages for 99.9% uptime and lightning speed." data-my="GitHub Pages ကို အသုံးပြုထားသဖြင့် အမြဲတမ်း အလုပ်လုပ်နေပြီး မြန်ဆန်ပါမည်။">Powered by GitHub Pages for 99.9% uptime and lightning speed.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-en="Bilingual Support" data-my="ဘာသာစကား နှစ်မျိုး">Bilingual Support</h3>
+                    <p data-en="Full support for both English and Burmese content." data-my="အင်္ဂလိပ်စာနှင့် မြန်မာစာ နှစ်မျိုးလုံးကို အပြည့်အဝ ထောက်ပံ့ပေးသည်။">Full support for both English and Burmese content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 data-en="How It Works" data-my="လုပ်ဆောင်ပုံ အဆင့်ဆင့်">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-num">1</span>
+                    <p data-en="Submit your resume details and choose a template." data-my="သင်၏ အချက်အလက်များကို ပေးပို့ပြီး ပုံစံရွေးချယ်ပါ။">Submit your resume details and choose a template.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">2</span>
+                    <p data-en="We build and optimize your professional site." data-my="ကျွန်ုပ်တို့မှ သင်၏ ဝဘ်ဆိုဒ်ကို အကောင်းဆုံး ဖန်တီးပေးပါမည်။">We build and optimize your professional site.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">3</span>
+                    <p data-en="Your site goes live at yourname.mmresume.com!" data-my="သင်၏ ဝဘ်ဆိုဒ်ကို လွှင့်တင်ပေးပါမည်။">Your site goes live at yourname.mmresume.com!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 data-en="Simple Pricing" data-my="ဈေးနှုန်းများ">Simple Pricing</h2>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h3 data-en="Basic" data-my="အခြေခံ">Basic</h3>
+                    <div class="price">$25</div>
+                    <ul data-en="<li>Single Page Site</li><li>Standard Subdomain</li><li>Mobile Responsive</li>" data-my="<li>စာမျက်နှာ တစ်ခု</li><li>Subdomain ပါဝင်သည်</li><li>ဖုန်းဖြင့် ကြည့်ရှုနိုင်သည်</li>">
+                        <li>Single Page Site</li>
+                        <li>Standard Subdomain</li>
+                        <li>Mobile Responsive</li>
+                    </ul>
+                </div>
+                <div class="price-card featured">
+                    <h3 data-en="Professional" data-my="ပရော်ဖက်ရှင်နယ်">Professional</h3>
+                    <div class="price">$50</div>
+                    <ul data-en="<li>Multi-page Site</li><li>Custom Graphics</li><li>SEO Optimization</li>" data-my="<li>စာမျက်နှာ အစုံ</li><li>ပုံဒီဇိုင်းများ ပါဝင်သည်</li><li>SEO ပြုလုပ်ပေးသည်</li>">
+                        <li>Multi-page Site</li>
+                        <li>Custom Graphics</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-en="Ready to Start?" data-my="စတင်ရန် အဆင်သင့်ပဲလား?">Ready to Start?</h2>
+            <p data-en="Contact us today to get your professional resume live." data-my="ယနေ့ပဲ ဆက်သွယ်ပြီး သင်၏ ကိုယ်ရေးရာဇဝင် ဝဘ်ဆိုဒ်ကို ဖန်တီးလိုက်ပါ။">Contact us today to get your professional resume live.</p>
+            <a href="mailto:order@mmresume.com" class="cta-button" data-en="Order Now" data-my="အခုပဲ မှာယူပါ">Order Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MM Resume Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
